@@ -1,0 +1,11 @@
+all : greedy sa
+
+greedy: greedy.cpp
+	g++ greedy.cpp -o greedy SumofGaussians.cpp SumofGaussians.h
+
+sa: sa.cpp
+	g++ sa.cpp -o sa  SumofGaussians.cpp SumofGaussians.h
+
+clean: 
+	rm -f greedy
+	rm -f sa
